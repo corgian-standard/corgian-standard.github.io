@@ -76,6 +76,7 @@ changes into local/remote repo as soon as possible is just an extension to what 
 been doing all the time. Whatever is preventing you from doing this, that is a tech debt.
 Imagine you cannot save the file every single second, that is a tech debt.
 
+## Counter Arguments
 ### Argument 1: Jokes on You, I don't use PR
 
 Not much to response here. You must have a PR. Doesn't matter what you are doing,
