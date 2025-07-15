@@ -20,6 +20,7 @@ changes, you can `STASH` and commit the typo, which is only a single line of cha
 not 30 lines of change. This is highly recommended because you are likely going to forget about it.
 The sooner you commit and push it into remote, the sooner you add values. This is why
 PR Squash Merge is so important because it enables you to iterate as Agile as possible.
+
 There is absolutely nothing wrong with 300 nano waterfall git commits in a single PR.
 It is a similar mindset of saving the file as often as possible. Instead of hording the changes
 in RAM, people commit the changes into persistent storage as soon as possible. Committing
