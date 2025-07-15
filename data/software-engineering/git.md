@@ -13,6 +13,54 @@ This is your ultimate goal. Whatever the challenges you faced, you should ask yo
 why couldn't you resolve those challenges and achieve this goal.
 Because more than likely, you are doing waterfall, which is in conflict with this goal.
 
+## Stop using Git CLI, use Git GUI (Learning Curve)
+
+This upsets a lot of people. Use Git CLI has a steeper learning curve than Git GUI.
+A lot of times, they don't understands the basics because they are too busy to
+figure out how the commands works. Using GUI, the process is simple, reliable, and
+low stress. Sure, you can use Git CLI later and there will be time to use it, but
+the chance is pretty low. Even for commandline environment like SSH, Visual Studio Code's
+built-in Git GUI works perfectly.
+
+## Stop using Git CLI, use Git GUI (STASH)
+
+This upsets a lot of people. Using Git CLI is not necessary and often too cumbersome.
+For a simple example, people using Git CLI is highly unlikely to use Git `STAGE`.
+Yes, Git `STAGE`. If you haven't heard of it, you likely already fall pray to Git CLI.
+Git `STAGE` is one of the most important feature that anyone should use every time they
+make a git commit. For example, if you are testing 30 lines of code changes and discovered
+a typo or a poorly phrased comment on the same file, you can `STAGE` that single line of
+fix instead of adding other 30 lines of code in the git commit. The same thing can be
+achieved using Git CLI, but it is so cumbersome, most people ignored it. Too many times
+I have seen too many Jr developers committing `accidental changes` because they didn't
+use `STAGE`.
+
+## Stop using advanced Git commands such as Rebase
+
+This upsets a lot of people. Rebase is bad, just don't do it.
+A lot of self-proclaimed git expert will tell you Rebase is fine, it is not.
+It is also not the same as PR Squash Merge despite what they tell you.
+Rebase tempers your own timeline, it destroy it and build a new one.
+PR Squash Merge did not temper your own timeline, it is still the same.
+Upon merging, it simply adds a single commit to describe what's new on the main branch.
+Why this matters? Because if you made a mistake on Rebase, you can completely
+destroy your timeline. Yes, sure, there are ways to recover your mistakes, but
+why set yourself up for mistakes anyway? PR Squash Merge is completely reliable and
+zero risk and it make a clean single commit on the main branch. You are not going to
+have multiple commits addressing the PR comments on the main branch, which makes
+main branch a lot cleaner to inspect.
+
+The following Git actions are more than enough to get the job done using simple Git GUI.
+1. Fetch
+1. Pull
+1. Branch
+1. Stash (not as important)
+1. Stage (important)
+1. Commit
+1. Push
+1. Merge latest main branch into current branch
+1. Create PR
+
 ### Argument 1: Jokes on You, I don't use PR
 
 Not much to response here. You must have a PR. Doesn't matter what you are doing,
@@ -85,8 +133,8 @@ The longer you hold the changes on your local storage and not committed into git
 onto the cloud, those value can be lost.
 What is worse, when you have so many code to commit at once, you become sloppy and commit
 code that is used for debugging purpose only. When doing an Agile tiny commit, you can
-`STASH` the code easily and while your memory is still fresh. People doing large commit
-often skip the critical `STASH` stage and blindly commit everything.
+`STAGE` the code easily and while your memory is still fresh. People doing large commit
+often skip the critical `STAGE` stage and blindly commit everything.
 
 ### Argument 8: I don't care, I want to see the original commits
 
