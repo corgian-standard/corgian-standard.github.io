@@ -88,4 +88,6 @@ code that is used for debugging purpose only. When doing an Agile tiny commit, y
 `STASH` the code easily and while your memory is still fresh. People doing large commit
 often skip the critical `STASH` stage and blindly commit everything.
 
-### Argument 8: 
+### Argument 8: I don't care, I want to see the original commits
+
+If you must, you can see the original commit in the PR.
