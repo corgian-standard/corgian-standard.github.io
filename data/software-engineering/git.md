@@ -13,6 +13,20 @@ This is your ultimate goal. Whatever the challenges you faced, you should ask yo
 why couldn't you resolve those challenges and achieve this goal.
 Because more than likely, you are doing waterfall, which is in conflict with this goal.
 
+## Practice Agile Nano Waterfall Git Commit
+
+If you identified a typo in a file that already has 30 lines of code
+changes, you can `STASH` and commit the typo, which is only a single line of change,
+not 30 lines of change. This is highly recommended because you are likely going to forget about it.
+The sooner you commit and push it into remote, the sooner you add values. This is why
+PR Squash Merge is so important because it enables you to iterate as Agile as possible.
+There is absolutely nothing wrong with 300 nano waterfall git commits in a single PR.
+It is a similar mindset of saving the file as often as possible. Instead of hording the changes
+in RAM, people commit the changes into persistent storage as soon as possible. Committing
+changes into local/remote repo as soon as possible is just an extension to what people have
+been doing all the time. Whatever is preventing you from doing this, that is a tech debt.
+Imagine you cannot save the file every single second, that is a tech debt.
+
 ## Stop using Git CLI, use Git GUI (Learning Curve)
 
 This upsets a lot of people. Use Git CLI has a steeper learning curve than Git GUI.
@@ -61,20 +75,6 @@ The following Git actions are more than enough to get the job done using simple 
 1. Push
 1. Merge latest main branch into current branch
 1. Create PR
-
-## Practice Agile Nano Waterfall Git Commit
-
-As mentioned earlier, if you identified a typo in a file that already has 30 lines of code
-changes, you can `STASH` and commit the typo, which is only a single line of change,
-not 30 lines of change. This is highly recommended because you are likely going to forget about it.
-The sooner you commit and push it into remote, the sooner you add values. This is why
-PR Squash Merge is so important because it enables you to iterate as Agile as possible.
-There is absolutely nothing wrong with 300 nano waterfall git commits in a single PR.
-It is a similar mindset of saving the file as often as possible. Instead of hording the changes
-in RAM, people commit the changes into persistent storage as soon as possible. Committing
-changes into local/remote repo as soon as possible is just an extension to what people have
-been doing all the time. Whatever is preventing you from doing this, that is a tech debt.
-Imagine you cannot save the file every single second, that is a tech debt.
 
 ## Counter Arguments
 ### Argument 1: Jokes on You, I don't use PR
