@@ -3,7 +3,7 @@
 Agile development is both loved and hated within software engineering industry.
 However, in many top successful stories, the development team followed the Agile methodology.
 They didn't have to match ritual described in the Agile textbooks.
-What it matters is to deliver value as soon as possible.
+What really mattered was, they delivered value as soon as possible.
 
 Doing Git in certain ways enables the team to add value into main branch as soon as possible.
 
