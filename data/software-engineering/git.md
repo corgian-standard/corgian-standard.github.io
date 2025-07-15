@@ -13,6 +13,8 @@ This is your ultimate goal. Whatever the challenges you faced, you should ask yo
 why couldn't you resolve those challenges and achieve this goal.
 Because more than likely, you are doing waterfall, which is in conflict with this goal.
 
+Side mention: default PR title as the squash merge commit message is recommended.
+
 ## Practice Agile Nano Waterfall Git Commit
 
 If you identified a typo in a file that already has 30 lines of code
@@ -32,6 +34,7 @@ Imagine you cannot save the file every single second, that is a tech debt.
 
 A PR should be small. Be honest, no one is going to read a large PR. It is a blind approval.
 You want PR to be small, thus, when squash merged, it is still easy to understand its goal.
+Small PR reduces chances of introducing new mistakes when addressing the PR comments.
 This also promotes smaller Agile sub-tasks that can be completed quickly instead of a
 waterfall sized PR.
 
@@ -84,12 +87,12 @@ The following Git actions are more than enough to get the job done using simple 
 
 ## Recap
 
-This is how a Corgian develop software and use Git as a simple tool to achieve their goal.
-Corgian uses simple to use GUI to interact with Git in an easy and reliable manner.
+This is how a Corgian develops software and use Git as a simple tool to achieve their goal.
+Corgian uses GUI to interact with Git in an easy and reliable manner.
 The changes are freely committed using `STASH`, commit, and push to add value as soon as possible.
 Once ready, merge in the latest main branch using the most basic merge strategy to avoid
-catastrophic mistakes. A bite sized PR is created, reviewed, approved, and squash merged into
-main branch as soon as possible.
+catastrophic mistakes. A small bite sized PR is created, reviewed, approved, and squash merged into
+main branch as a single clean commit.
 
 ## Counter Arguments
 ### Argument 1: Jokes on You, I don't use PR
