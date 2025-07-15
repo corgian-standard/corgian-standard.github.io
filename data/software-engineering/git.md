@@ -27,6 +27,13 @@ changes into local/remote repo as soon as possible is just an extension to what 
 been doing all the time. Whatever is preventing you from doing this, that is a tech debt.
 Imagine you cannot save the file every single second, that is a tech debt.
 
+## Practice Agile Small Pull Request (PR)
+
+A PR should be small. Be honest, no one is going to read a large PR. It is a blind approval.
+You want PR to be small, thus, when squash merged, it is still easy to understand its goal.
+This also promotes smaller Agile sub-tasks that can be completed quickly instead of a
+waterfall sized PR.
+
 ## Stop using Git CLI, use Git GUI (Learning Curve)
 
 This upsets a lot of people. Use Git CLI has a steeper learning curve than Git GUI.
@@ -39,15 +46,15 @@ built-in Git GUI works perfectly.
 ## Stop using Git CLI, use Git GUI (STASH)
 
 This upsets a lot of people. Using Git CLI is not necessary and often too cumbersome.
-For a simple example, people using Git CLI is highly unlikely to use Git `STAGE`.
-Yes, Git `STAGE`. If you haven't heard of it, you likely already fall pray to Git CLI.
+For a simple example, people using Git CLI highly unlikely used Git `STAGE`.
+Yes, Git `STAGE`. If you haven't heard of it, you likely already fall pray to Git CLI mindset.
 Git `STAGE` is one of the most important feature that anyone should use every time they
 make a git commit. For example, if you are testing 30 lines of code changes and discovered
 a typo or a poorly phrased comment on the same file, you can `STAGE` that single line of
 fix instead of adding other 30 lines of code in the git commit. The same thing can be
 achieved using Git CLI, but it is so cumbersome, most people ignored it. Too many times
-I have seen too many Jr developers committing `accidental changes` because they didn't
-use `STAGE`. Obviously people makes mistakes, but their frequency of `accidental changes`
+I have seen Jr developers committing `accidental changes` because they didn't use `STAGE`.
+Obviously people makes mistakes, but their frequency of `accidental changes`
 is a lot higher when not using `STAGE`.
 
 ## Stop using advanced Git commands such as Rebase
@@ -58,12 +65,10 @@ It is also not the same as PR Squash Merge despite what they tell you.
 Rebase tempers your own timeline, it destroy it and build a new one.
 PR Squash Merge did not temper your own timeline, it is still the same.
 Upon merging, it simply adds a single commit to describe what's new on the main branch.
-Why this matters? Because if you made a mistake on Rebase, you can completely
+Why this matters? Because if you made a mistake on Rebase, you may completely
 destroy your timeline. Yes, sure, there are ways to recover your mistakes, but
 why set yourself up for mistakes anyway? PR Squash Merge is completely reliable and
-zero risk and it make a clean single commit on the main branch. You are not going to
-have multiple commits addressing the PR comments on the main branch, which makes
-main branch a lot cleaner to inspect.
+zero risk and it makes a clean main branch.
 
 The following Git actions are more than enough to get the job done using simple Git GUI.
 1. Fetch
@@ -75,6 +80,15 @@ The following Git actions are more than enough to get the job done using simple 
 1. Push
 1. Merge latest main branch into current branch
 1. Create PR
+
+## Recap
+
+This is how a Corgian develop software and use Git as a simple tool to achieve their goal.
+Corgian uses simple to use GUI to interact with Git in an easy and reliable manner.
+The changes are freely committed using `STASH`, commit, and push to add value as soon as possible.
+Once ready, merge in the latest main branch using the most basic merge strategy to avoid
+catastrophic mistakes. A bite sized PR is created, reviewed, approved, and squash merged into
+main branch as soon as possible.
 
 ## Counter Arguments
 ### Argument 1: Jokes on You, I don't use PR
